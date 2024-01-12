@@ -492,6 +492,9 @@ section {
 # Mobile Navigation
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
+  body{
+    font-size: 50% !important;
+  }
   .navbar {
     position: fixed;
     top: 0;
@@ -1441,7 +1444,29 @@ padding-bottom: 0px;
   }
 
 }
+@media (max-width: 1023px) {
+  .hero ul li {
+    
+    font-size: 13px !important;
+}
+  .text-center {
+    text-align: left !important;
+}
+  .sticked-header-offset {
+    margin-top: 0px !important;
+}
+}
 @media (max-width: 767px) {
+  .hero ul li {
+    
+    font-size: 13px !important;
+}
+  .text-center {
+    text-align: left !important;
+}
+  .sticked-header-offset {
+    margin-top: 0px !important;
+}
   .testimonials .testimonial-wrap {
     padding-left: 0;
   }
@@ -2234,6 +2259,20 @@ padding-bottom: 0px;
   overflow: hidden;  
   /* background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover; */
 }
+/* #hero {
+  position: relative;
+  overflow: hidden;
+} */
+
+#hero video {
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+   
+}
+
 .hero h1 {
     color: var(--white);
     font-weight: 900;
@@ -3295,14 +3334,14 @@ padding: 0px;
     background-size: cover;
     
   } */
-  @keyframes zoomOutAnimation {
+  /* @keyframes zoomOutAnimation {
     0% {
-      transform: scale(1); /* Zoom-in size */
+      transform: scale(.9);  
     }
     100% {
-      transform: scale(1.1); /* Initial size */
+      transform: scale(1 );  
     }
-  }
+  } */
   
   .section-eight {
     background-image: url(../img/enterprise-upsell-v5-desktop-test.jpg);
