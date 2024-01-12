@@ -3551,7 +3551,7 @@ padding: 0px;
   }
   50% {
     opacity: 0.5;
-    transform: translateY(100px); /* Adjust the distance as needed */
+    transform: translateY(100px);  
   }
   100% {
     opacity: 1;
