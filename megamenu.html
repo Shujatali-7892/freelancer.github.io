@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .mega-menu {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .mega-menu-column {
+      float: left;
+      width: 25%; /* You can adjust the width of each column */
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+
+    .mega-menu a {
+      text-decoration: none;
+      color: #000; /* Adjust the color as needed */
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu mega-menu">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mega-menu-column">
+          <a class="dropdown-item" href="#">Link 1 lorem20</a>
+        </div>
+        <div class="mega-menu-column">
+          <a class="dropdown-item" href="#">Link 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, ipsum?</a>
+        </div>
+        <div class="mega-menu-column">
+          <a class="dropdown-item" href="#">Link 3 Lorem ipsum dolor sit amet.</a>
+        </div>
+        <div class="mega-menu-column">
+          <a class="dropdown-item" href="#">Link 4</a>
+        </div>
+        <div class="mega-menu-column">
+          <a class="dropdown-item" href="#">Link 5 Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js scripts (required for dropdown functionality) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
