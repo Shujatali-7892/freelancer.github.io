@@ -974,13 +974,9 @@ display: flex;
   border-right: 1px solid gray;
 }
 .hire-btn{ 
-  background-color: #1da1f2;
-    display: flex;
-    color: white;
-    align-items: center;
-    font-weight: 700;
-    justify-content: center; 
-     
+  background-color: #1da1f2; 
+    color: white; 
+    font-weight: 700; 
     box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff86;
     transition: all 0.4s;
 } 
@@ -992,4 +988,7 @@ display: flex;
 .pro-img img{
   height:185px;
   width: 185px;
+}
+.pro-img{
+  text-align: center;
 }
