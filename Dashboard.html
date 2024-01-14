@@ -38,129 +38,218 @@
 <body>
 
     <!-- ======= Header ======= -->
-
-
-    <header id="header" class="header mb-5 ">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">
-                    <img src="./img/freelancer-logo-light.png" class="img-fluid" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-compass" aria-hidden="true"></i> &nbsp; Browse
-                            </a>
-                            <div class="dropdown-menu">
-
-                                <ul>
-                                    <li>
-                                        <a class="dropdown-item" href="#"> <i class="fa fa-folder "
-                                                aria-hidden="true"></i> &nbsp; Projects</a>
-                                        <p>Explore exciting new project opportunities now!</p>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-bars" aria-hidden="true"></i>
-                                            &nbsp; Contests</a>
-                                        <p>Unleash your talent and win Freelancer contests!</p>
-                                    </li>
-
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a class="dropdown-item" href="#"> <i class="fa fa-user" aria-hidden="true"></i>
-                                            &nbsp; Freelancers</a>
-                                        <p>Find top-rated freelancers for your project</p>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp; Manage
-                            </a>
-                            <div class="dropdown-menu">
-
-                                <ul>
-                                    <li>
-                                        <a class="dropdown-item" href="#"> <i class="fa fa-folder "
-                                                aria-hidden="true"></i> &nbsp; Projects</a>
-                                        <p>Explore exciting new project opportunities now!</p>
-                                    </li>
-                                </ul>
-
-
-
-
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-users" aria-hidden="true"></i> &nbsp; Groups
-                            </a>
-                            <div class="dropdown-menu">
-
-                                <ul>
-                                    <li>
-                                        <a class="dropdown-item" href="#"> <i class="fa fa-folder "
-                                                aria-hidden="true"></i> &nbsp; Projects</a>
-                                        <p>Explore exciting new project opportunities now!</p>
-                                    </li>
-                                </ul>
-
-
-
-
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
-                    </form>
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/freelancer-logo-light.png" class="img-fluid logoDark" alt="" style="display: none;">
+                <img src="./img/freelancer-logo.png" class="img-fluid  logoLight" alt="">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-content">
+                <div class="hamburger-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="div-menu">
-            <div class="container-fluid">
-                <nav id="navbar" class="navbar">
-                    <ul>
-                        <li> <a href="Dashboard.html" class="active">Dashboard</a> </li>
-                        <li> <a href="List.html">List</a> </li>
-                        <li> <a href="Tasklists.html">Tasklists</a> </li>
-                        <li> <a href="MyProjects.html">My Projects</a> </li>
-                        <li> <a href="Inbox.html">Inbox</a> </li>
-                        <li> <a href="Feedback.html">Feedback</a> </li>
-                        <li> <a href="FreeCredit.html">Free Credit</a> </li>
-                        <li class="d-md-none"><a href="#"> How it work </a></li>
-                        <li class="d-md-none"><a href="#"> Browse Jobs</a></li>
-                        <li class="d-xl-none"><a href="#"> Login </a></li>
-                        <li class="d-xl-none"><a href="#"> Signup</a></li>
-                        <li class="d-xl-none"><button class="btn btn-sm btn-danger"> Post a Project</button></li>
-                    </ul>
-                </nav>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
 
+                    <li class="nav-item dropdown dropdown-mega position-static">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#Browse"><i class="fa fa-compass" aria-hidden="true"></i> &nbsp; Browse</a>
+
+                        <div id="Browse" class="dropdown-menu collapse shadow">
+                            <div class="mega-content px-4">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <h4>Search</h4>
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                                            <h5> <i class="fa fa-folder " aria-hidden="true"></i> &nbsp; Projects</h5>
+                                            <p class="">Explore exciting new project opportunities now!</p>
+
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                                            <h5>
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                                &nbsp; Contests
+                                            </h5>
+                                            <p class="">Unleash your talent and win Freelancer contests!</p>
+
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                                            <h5><i class="fa fa-user" aria-hidden="true"></i>
+                                                &nbsp; Freelancers</h5>
+                                            <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-3 py-4">
+                                            <h5><i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp; Manage
+                                            </h5>
+                                            <p>Explore exciting new project opportunities now!</p>
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                                            <h5> <i class="fa fa-folder " aria-hidden="true"></i> &nbsp; Projects</h5>
+                                            <p class="">Explore exciting new project opportunities now!</p>
+
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                                            <h5>
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                                &nbsp; Contests
+                                            </h5>
+                                            <p class="">Unleash your talent and win Freelancer contests!</p>
+
+                                        </div>
+                                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                                            <h5><i class="fa fa-user" aria-hidden="true"></i>
+                                                &nbsp; Freelancers</h5>
+                                            <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-3 py-4">
+                                            <h5><i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp; Manage
+                                            </h5>
+                                            <p>Explore exciting new project opportunities now!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-mega position-static">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#Manage">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp; Manage</a>
+
+                        <div id="Manage" class="dropdown-menu collapse shadow">
+                            <div class="mega-content px-4">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <b> Recent Projects</b>
+
+                                        </div>
+                                        <div class="col-lg-4 text-end">
+                                            <a href="#"> View All</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>You do not have any active projects. <br>
+                                                Create one to get started!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-mega position-static">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#demo">
+                            <i class="fa fa-users" aria-hidden="true"></i> &nbsp; Groups </a>
+
+                        <div id="demo" class="dropdown-menu collapse shadow">
+                            <div class="mega-content px-4">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <b> Groups</b>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="">
+                                                View All
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>
+                                                Freelancer Onboarding
+                                                Updated
+                                                in 6 minutes
+                                               
+                                            </p>
+                                            <p>
+                                                General Announcements
+                                                Updated
+                                                20 days ago
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item d-lg-none d-block"> <a href="Dashboard.html" class="nav-link " href="#"
+                            tabindex="-1">Dashboard</a> </li>
+                    <li class="nav-item d-lg-none d-block"> <a href="List.html" class="nav-link" href="#"
+                            tabindex="-1">List</a>
+                    </li>
+                    <li class="nav-item d-lg-none d-block"> <a href="Tasklists.html" class="nav-link" href="#"
+                            tabindex="-1">Tasklists</a> </li>
+                    <li class="nav-item d-lg-none d-block"> <a href="MyProjects.html" class="nav-link" href="#"
+                            tabindex="-1">My
+                            Projects</a> </li>
+                    <li class="nav-item d-lg-none d-block"> <a href="Inbox.html" class="nav-link" href="#"
+                            tabindex="-1">Inbox</a>
+                    </li>
+                    <li class="nav-item  d-lg-none d-block"> <a href="Feedback.html" class="nav-link" href="#"
+                            tabindex="-1">Feedback</a> </li>
+                    <li class="nav-item d-lg-none d-block"> <a href="FreeCredit.html" class="nav-link" href="#"
+                            tabindex="-1">Free
+                            Credit</a> </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" data-bs-toggle-theme="true" aria-disabled="true">
+                            <i class="fa fa-adjust"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary border-0" type="submit">Search</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg shadow-2 d-lg-block d-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="collapse navbar-collapse" id="navbar-content">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
 
-    </header>
+                            <li class="nav-item active"> <a href="Dashboard.html" class="nav-link active" href="#"
+                                    tabindex="-1">Dashboard</a> </li>
+                            <li class="nav-item"> <a href="List.html" class="nav-link" href="#" tabindex="-1">List</a>
+                            </li>
+                            <li class="nav-item"> <a href="Tasklists.html" class="nav-link" href="#"
+                                    tabindex="-1">Tasklists</a> </li>
+                            <li class="nav-item"> <a href="MyProjects.html" class="nav-link" href="#" tabindex="-1">My
+                                    Projects</a> </li>
+                            <li class="nav-item"> <a href="Inbox.html" class="nav-link" href="#" tabindex="-1">Inbox</a>
+                            </li>
+                            <li class="nav-item"> <a href="Feedback.html" class="nav-link" href="#"
+                                    tabindex="-1">Feedback</a> </li>
+                            <li class="nav-item"> <a href="FreeCredit.html" class="nav-link" href="#" tabindex="-1">Free
+                                    Credit</a> </li>
+                        </ul>
 
+                    </div>
+                </div>
+            </div>
 
-
+        </div>
+    </nav>
     <main id="main">
 
-        <section class="section-dv  mt-5">
+        <section class="section-dv">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -427,7 +516,7 @@
                                                             <div class="col-lg-8">
                                                                 <input type="file" class="form-control">
                                                             </div>
-                                                            <div class="col-lg-4 text-end my-auto">
+                                                            <div class="col-lg-4 text-end mt-lg-0 mt-3">
                                                                 <button
                                                                     class="btn btn-sm bg-danger text-light">Cancel</button>
                                                                 &nbsp;
@@ -675,7 +764,7 @@
                                                             <div class="col-lg-8">
                                                                 <input type="file" class="form-control">
                                                             </div>
-                                                            <div class="col-lg-4 text-end my-auto">
+                                                            <div class="col-lg-4 text-end mt-lg-0 mt-3">
                                                                 <button
                                                                     class="btn btn-sm bg-danger text-light">Cancel</button>
                                                                 &nbsp;
@@ -778,7 +867,7 @@
                                                         <source src="./videos/1704817195330.mp4" type="video/mp4">
                                                         <source src="./videos/1704817195330.mp4" type="video/ogg">
                                                         Your browser does not support the video tag.
-                                                      </video>
+                                                    </video>
                                                     <div class="row">
                                                         <div class="col-12 text-end">
                                                             <div id="readMoreBtn" style="display: none;"
@@ -924,7 +1013,7 @@
                                                             <div class="col-lg-8">
                                                                 <input type="file" class="form-control">
                                                             </div>
-                                                            <div class="col-lg-4 text-end my-auto">
+                                                            <div class="col-lg-4 text-end mt-lg-0 mt-3">
                                                                 <button
                                                                     class="btn btn-sm bg-danger text-light">Cancel</button>
                                                                 &nbsp;
@@ -1176,7 +1265,7 @@
                                                             <div class="col-lg-8">
                                                                 <input type="file" class="form-control">
                                                             </div>
-                                                            <div class="col-lg-4 text-end my-auto">
+                                                            <div class="col-lg-4 text-end mt-lg-0 mt-3">
                                                                 <button
                                                                     class="btn btn-sm bg-danger text-light">Cancel</button>
                                                                 &nbsp;
@@ -1192,7 +1281,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-lg-4">
                         <div class="row">
@@ -1442,6 +1531,10 @@
     <!-- Template Main JS File -->
     <script src="./js/main.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+
+    </script>
     <script>
         var el = document.querySelector('.more');
         var btn = el.querySelector('.more-btn');
