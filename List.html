@@ -169,7 +169,7 @@
                                                 Freelancer Onboarding
                                                 Updated
                                                 in 6 minutes
-                                               
+
                                             </p>
                                             <p>
                                                 General Announcements
@@ -227,7 +227,8 @@
 
                             <li class="nav-item active"> <a href="Dashboard.html" class="nav-link" href="#"
                                     tabindex="-1">Dashboard</a> </li>
-                            <li class="nav-item"> <a href="List.html" class="nav-link active" href="#" tabindex="-1">List</a>
+                            <li class="nav-item"> <a href="List.html" class="nav-link active" href="#"
+                                    tabindex="-1">List</a>
                             </li>
                             <li class="nav-item"> <a href="Tasklists.html" class="nav-link" href="#"
                                     tabindex="-1">Tasklists</a> </li>
@@ -248,14 +249,389 @@
         </div>
     </nav>
     <main id="main">
+        <div class="list-div">
+            <section class="section-dv">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
 
-        <section class="section-dv">
-            <div class="container">
-                <div class="row">
-                    
+                            <div class="tab w-100">
+                                <div class="row">
+                                    <div class="col-6 mt-auto">
+                                        <h6 class="ps-2"><b>
+                                                Lists
+                                            </b></h6>
+                                    </div>
+                                    <div class="col-6 mt-auto text-end">
+                                        <div class="text-end">
+                                            <button class="btn btn-sm btn-link py-1 text-end" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-plus"></i> New List</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr class="pt-0 mt-0">
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <p><b class="ps-2">User</b></p>
+
+
+                                    </div>
+                                </div>
+                                <button class="tablinks " onclick="openCity(event, 'Favorites')" id="defaultOpen"> <i
+                                        class="fa-solid fa-heart"></i> &nbsp; Favorites</button>
+                                <button class="tablinks" onclick="openCity(event, 'Hires')"> <i
+                                        class="fa-solid fa-user-plus"></i> &nbsp; My Hires</button>
+                                <button class="tablinks" onclick="openCity(event, 'Viewed')"> <i
+                                        class="fa-solid fa-eye"></i> &nbsp; Recently Viewed</button>
+                                        <hr>
+                                        <p>Group posts</p>
+                                        <button class="tablinks" onclick="openCity(event, 'Bookmarks')">  <i class="fa-solid fa-bookmark"></i> &nbsp; Bookmarks</button>
+                            </div>
+                        </div>
+                        <div class="col-md-8 ms-auto">
+                            <div id="Favorites" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4>
+                                            <span> <b>Favorites</b></span> &nbsp;
+                                            <span class="icons-tbs"><small> <i class="fa-solid fa-lock"></i> &nbsp;
+                                                    Private </small></span> &nbsp;
+                                            <span class="icons-tbs"> <small> <i class="fa-solid fa-users"></i> &nbsp; 0
+                                                    members </small> </span> &nbsp;
+                                        </h4>
+                                    </div>
+                                </div>
+                                <hr class="pt-0 mt-0">
+                                <div class="row">
+                                    <div class="col-4 ms-auto text-end">
+                                        <button type="button" class="btn btn-sm btn-secondary"> Browse Freelancers
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-4 col-sm-10 col-12 mx-auto text-center ">
+                                        <h3><strong><span class="txt-rotate" data-period="2000"
+                                                    data-rotate='[ "This list is empty!"  ]'></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="Hires" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4>
+                                            <span> <b>My Hires </b></span> &nbsp;
+                                            <span class="icons-tbs"><small> <i class="fa-solid fa-lock"></i> &nbsp;
+                                                    Private </small></span> &nbsp;
+                                            <span class="icons-tbs"> <small> <i class="fa-solid fa-users"></i> &nbsp; 0
+                                                    members </small> </span> &nbsp;
+                                        </h4>
+                                        <p>Here you can find all freelancers who you've worked with in the past.</p>
+                                    </div>
+                                </div>
+                                <hr class="pt-0 mt-0">
+                                <div class="row">
+                                    <div class="col-4 ms-auto text-end">
+                                        <button type="button" class="btn btn-sm btn-secondary"> Browse Freelancers
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-4 col-sm-10 col-12 mx-auto text-center ">
+                                        <h3><strong><span class="txt-rotate" data-period="2000"
+                                                    data-rotate='[ "This list is empty!"  ]'></span></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Viewed" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4>
+                                            <span> <b>Recently Viewed</b></span> &nbsp;
+                                            <span class="icons-tbs"><small> <i class="fa-solid fa-lock"></i> &nbsp;
+                                                    Private </small></span> &nbsp;
+                                            <span class="icons-tbs"> <small> <i class="fa-solid fa-users"></i> &nbsp; 3
+                                                    members </small> </span> &nbsp;
+                                        </h4>
+                                        <p>Here you can find users whose profiles you have recently viewed.</p>
+                                    </div>
+                                </div>
+                                <hr class="pt-0 mt-0">
+                                <div class="profile-cards">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card card-1">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="pro-img">
+                                                        <img src="./img/chatbox/CROPPED_profile_logo_FSUIV_0478826840d594f319eeaa142b31bbeb.jpg" class="img-fluid">
+                                            </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+
+                                                        <div class="card-description">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <h3 class="card-description-title">
+                                                                        <span> Wilford Remy  </span>
+                                                                        <span class="mailname"><small>,@Wilford87</small></span>
+                                                                       </h3>
+                                                                       
+                                                                        <div class="row">
+                                                                            <div class="col-6">
+                                                                                <p class="freelancer-status">
+                                                                                    <i class="fa-solid fa-star"></i> &nbsp; 
+                                                                                    New Freelancer
+                                                                                 </p>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <p class="satates">
+                                                                                    <i class="fa-solid fa-flag"></i> &nbsp; 
+                                                                                    England
+                                                                                </p>
+                                                                            </div>
+                                                                        </div> 
+                                                                </div>
+                                                                <div class="col-md-4 text-end">
+                                                                    <div class="card-description-price">
+                                                                        <h6><b>$117 USD</b></h6>
+                                                                        <P><small>Per hour</small></P>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                            
+                                                           <div class="row">
+                                                            <div class="col-md-8">
+                                                                <span class="card-description-profession">Back-End Developer</span>
+                                                            </div>
+                                                            <div class="col-md-4 text-end">
+                                                                <div class="head-div">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                      <div class="row">
+                                                        <div class="col-md-10 col-12">
+                                                            <div class="about-dicb">
+                                                                16 + years of experience of Developing web Applications using 
+                                                                Asp.net, MVC, JavaScript, XML, XSL, Web services,SharePoint,Power Apps 
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <div class="tegnolgs">
+                                                                        <ul>
+                                                                            <li> JavaScript </li>
+                                                                            <li>.Net</li>
+                                                                            <li>SQL</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2 text-end">
+                                                                    <button class="btn btn-md hire-btn">Hire</button>
+                                                                </div>
+                                                            </div> 
+                                                          </div>
+                                                    </div>
+                                                </div>
+
+                                               
+                                            
+                                              
+                                              </div>
+                                              <div class="card card-1 mt-2">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="pro-img">
+                                                        <img src="./img/chatbox/CROPPED_profile_logo_EPHAH_505a52dc07693f82940244962e0feb93.jpg" class="img-fluid">
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+
+                                                        <div class="card-description">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <h3 class="card-description-title">
+                                                                        <span> Wilford Remy  </span>
+                                                                        <span class="mailname"><small>,@Wilford87</small></span>
+                                                                       </h3>
+                                                                       
+                                                                        <div class="row">
+                                                                            <div class="col-6">
+                                                                                <p class="freelancer-status">
+                                                                                    <i class="fa-solid fa-star"></i> &nbsp; 
+                                                                                    New Freelancer
+                                                                                 </p>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <p class="satates">
+                                                                                    <i class="fa-solid fa-flag"></i> &nbsp; 
+                                                                                    England
+                                                                                </p>
+                                                                            </div>
+                                                                        </div> 
+                                                                </div>
+                                                                <div class="col-md-4 text-end">
+                                                                    <div class="card-description-price">
+                                                                        <h6><b>$117 USD</b></h6>
+                                                                        <P><small>Per hour</small></P>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                            
+                                                           <div class="row">
+                                                            <div class="col-md-8">
+                                                                <span class="card-description-profession">Back-End Developer</span>
+                                                            </div>
+                                                            <div class="col-md-4 text-end">
+                                                                <div class="head-div">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                      <div class="row">
+                                                        <div class="col-md-10 col-12">
+                                                            <div class="about-dicb">
+                                                                16 + years of experience of Developing web Applications using 
+                                                                Asp.net, MVC, JavaScript, XML, XSL, Web services,SharePoint,Power Apps 
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <div class="tegnolgs">
+                                                                        <ul>
+                                                                            <li> JavaScript </li>
+                                                                            <li>.Net</li>
+                                                                            <li>SQL</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2 text-end">
+                                                                    <button class="btn btn-md hire-btn">Hire</button>
+                                                                </div>
+                                                            </div> 
+                                                          </div>
+                                                    </div>
+                                                </div>
+
+                                               
+                                            
+                                              
+                                              </div>
+                                              <div class="card card-1 mt-2">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="pro-img">
+                                                        <img src="./img/chatbox/profile_logo_272979132.jpg" class="img-fluid">
+                                            </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+
+                                                        <div class="card-description">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <h3 class="card-description-title">
+                                                                        <span> Wilford Remy  </span>
+                                                                        <span class="mailname"><small>,@Wilford87</small></span>
+                                                                       </h3>
+                                                                       
+                                                                        <div class="row">
+                                                                            <div class="col-6">
+                                                                                <p class="freelancer-status">
+                                                                                    <i class="fa-solid fa-star"></i> &nbsp; 
+                                                                                    New Freelancer
+                                                                                 </p>
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <p class="satates">
+                                                                                    <i class="fa-solid fa-flag"></i> &nbsp; 
+                                                                                    England
+                                                                                </p>
+                                                                            </div>
+                                                                        </div> 
+                                                                </div>
+                                                                <div class="col-md-4 text-end">
+                                                                    <div class="card-description-price">
+                                                                        <h6><b>$117 USD</b></h6>
+                                                                        <P><small>Per hour</small></P>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                            
+                                                           <div class="row">
+                                                            <div class="col-md-8">
+                                                                <span class="card-description-profession">Back-End Developer</span>
+                                                            </div>
+                                                            <div class="col-md-4 text-end">
+                                                                <div class="head-div">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                      <div class="row">
+                                                        <div class="col-md-10 col-12">
+                                                            <div class="about-dicb">
+                                                                16 + years of experience of Developing web Applications using 
+                                                                Asp.net, MVC, JavaScript, XML, XSL, Web services,SharePoint,Power Apps 
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <div class="tegnolgs">
+                                                                        <ul>
+                                                                            <li> JavaScript </li>
+                                                                            <li>.Net</li>
+                                                                            <li>SQL</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-2 text-end">
+                                                                    <button class="btn btn-md hire-btn">Hire</button>
+                                                                </div>
+                                                            </div> 
+                                                          </div>
+                                                    </div>
+                                                </div>
+
+                                               
+                                            
+                                              
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Bookmarks" class="tabcontent mt-auto">
+                                <div class="row mt-auto">
+                                    <div class="col-12 text-center mt-auto">
+                                         <div class="center-box ">
+                                            <img src="./img/external-project-rejected.svg" class="img-fluid" alt="">
+                                         </div>
+                                         <p><b>
+                                            You have no bookmarked group posts
+                                         </b></p>
+                                         <p>Any Groups posts you bookmark will appear here.</p>
+                                       <a href="" class="">   View My Groups</a>
+                                    </div>
+                                </div>
+                                 
+                                
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </main>
     <!-- End #main -->
 
@@ -367,6 +743,34 @@
 
     <div id="preloader"></div>
 
+<!-- modal file -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name*:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Description:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cencel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Vendor JS Files -->
 
     <script src="./js/jquery-3.6.4.min.js"></script>
@@ -386,138 +790,84 @@
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
     <script>
-
-    </script>
-    <script>
-        var el = document.querySelector('.more');
-        var btn = el.querySelector('.more-btn');
-        var menu = el.querySelector('.more-menu');
-        var visible = false;
-
-        function showMenu(e) {
-            e.preventDefault();
-            if (!visible) {
-                visible = true;
-                el.classList.add('show-more-menu');
-                menu.setAttribute('aria-hidden', false);
-                document.addEventListener('mousedown', hideMenu, false);
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
 
-        function hideMenu(e) {
-            if (btn.contains(e.target)) {
-                return;
-            }
-            if (visible) {
-                visible = false;
-                el.classList.remove('show-more-menu');
-                menu.setAttribute('aria-hidden', true);
-                document.removeEventListener('mousedown', hideMenu);
-            }
-        }
-
-        btn.addEventListener('click', showMenu, false);
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
     <script>
-        $(document).ready(function () {
-            $("#likeButton").click(function () {
-                // Toggle the color on click
-                $(this).toggleClass("liked");
 
-                // Update the like count (you may replace this logic with your actual update mechanism)
-                var likeCount = parseInt($(".like-count").text());
-                if ($(this).hasClass("liked")) {
-                    likeCount++;
-                } else {
-                    likeCount--;
-                }
-                $(".like-count").text(likeCount);
-            });
-            $("#dislikeButton").click(function () {
-                // Toggle the color on click
-                $(this).toggleClass("liked");
 
-                // Update the like count (you may replace this logic with your actual update mechanism)
-                var likeCount = parseInt($(".like-count").text());
-                if ($(this).hasClass("disliked")) {
-                    likeCount++;
-                } else {
-                    likeCount--;
-                }
-                $(".dislike-count").text(likeCount);
-            });
-        });
-    </script>
-    <script>
-        var tips = document.getElementById('communicationTips');
-        var moreBtn = document.getElementById('readMoreBtn');
-        var lessBtn = document.getElementById('readLessBtn');
 
-        // Check if content height exceeds 100px
-        if (tips.scrollHeight > 100) {
-            moreBtn.style.display = 'inline';
-        }
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 1000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
 
-        function toggleReadMore() {
-            if (tips.style.maxHeight === '100px') {
-                tips.style.maxHeight = 'none'; // Show full content
-                moreBtn.style.display = 'none';
-                lessBtn.style.display = 'inline';
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
             } else {
-                tips.style.maxHeight = '100px'; // Show truncated content
-                moreBtn.style.display = 'inline';
-                lessBtn.style.display = 'none';
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
             }
-        }
-    </script>
-    <script>
-        var comt = document.getElementById('user-communication');
-        var moreBtns = document.getElementById('userreadMoreBtn');
-        var lessBtns = document.getElementById('userreadLessBtn');
 
-        // Check if content height exceeds 100px
-        if (comt.scrollHeight > 100) {
-            moreBtns.style.display = 'inline';
-        }
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-        function toggleReadMores() {
-            if (comt.style.maxHeight === '100px') {
-                comt.style.maxHeight = 'none'; // Show full content
-                moreBtns.style.display = 'none';
-                lessBtns.style.display = 'inline';
-            } else {
-                comt.style.maxHeight = '100px'; // Show truncated content
-                moreBtns.style.display = 'inline';
-                lessBtns.style.display = 'none';
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
             }
-        }
-    </script>
-    <script>
-        function toggleDropdown() {
-            var dropdown = document.getElementById("myDropdown");
-            dropdown.classList.toggle("show");
-        }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.more-btn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-menu");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
                 }
             }
-        }
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("#copyButton").onclick(function () {
-                $(".copied").style.opacity = "1";
-                alert($('#hello').text(awa));
-            })
-        });
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };
+
     </script>
 </body>
 
