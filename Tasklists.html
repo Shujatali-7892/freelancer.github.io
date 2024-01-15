@@ -336,14 +336,13 @@
                                 <hr class="pt-0 mt-0">
                                 <div class="row mt-auto">
                                     <div class="col-12 text-center mt-auto">
-                                        <div class="center-box ">
+                                        <div class="center-box my-lg-5">
                                             <img src="./img/external-project-rejected.svg" class="img-fluid" alt="">
                                         </div>
-                                        <p><b>
-                                                You have no bookmarked group posts
-                                            </b></p>
-                                        <p>Any Groups posts you bookmark will appear here.</p>
-                                        <a href="" class=""> View My Groups</a>
+                                        <p ><b>  No tasks yet </b></p>
+                                        <p>Create tasks and assign them to people to help keep your team on track.</p>
+                                        <button class="btn btn-sm icon-btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#Createtask">Create your first task</button>
                                     </div>
                                 </div>
 
@@ -672,6 +671,40 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cencel</button>
                     <button type="button" class="btn btn-primary">Save Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Createtask" tabindex="-1" aria-labelledby="CreatetaskModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addTaskModalLabel">Create Task </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Name (required):</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Assign" class="col-form-label">Assign to:</label>
+                            <input type="text" class="form-control" id="Assign">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Due-date" class="col-form-label">Due date:</label>
+                            <input type="date" class="form-control" id="Due-date">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Description:</label>
+                            <textarea rows="3" class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cencel</button>
+                    <button type="button" class="btn btn-primary">Add  Task</button>
                 </div>
             </div>
         </div>
