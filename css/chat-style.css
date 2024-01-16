@@ -457,14 +457,14 @@ ol li {
 
 .content-chat .content-chat-user {
   background-color: white;
-  /* padding: 15px;
-  border-radius: 25px;
-  width: 350px; */
   box-shadow: var(--shadow);
+  height: 78vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .content-chat .content-chat-user .head-search-chat {
-  background-color: #19b6d3;
+  background-color: var(--btn-color);
   /* margin: -15px -15px 15px -15px;
   border-radius: 25px 25px 0 0; */
   padding: 10px 15px;
@@ -482,14 +482,21 @@ ol li {
   border-radius: 25px;
 }
 
-.content-chat .content-chat-user .search-user input {
+/* .content-chat .content-chat-user .search-user input {
   padding: 10px 15px;
   border-radius: 25px;
   border: 2px solid #949494;
   outline: none;
   width: 100%;
+} */
+.content-chat .content-chat-user .search-user input {
+  padding: 6px 15px;
+  border-radius:  10px;
+  border: 1px solid #949494;
+  outline: none;
+  width: 100%;
+   
 }
-
 .content-chat .content-chat-user .search-user span i {
   position: absolute;
   top: 10px;
@@ -499,12 +506,14 @@ ol li {
 .content-chat .content-chat-user .list-search-user-chat {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   height: 100%;
-  max-height: 430px;
+  /* max-height: 430px; */
   overflow-y: auto;
+  box-shadow: var(--shadow) inset;
+  padding: 10px;
+  height: 60vh;
 }
-
 .content-chat .content-chat-user .list-search-user-chat::-webkit-scrollbar {
   -webkit-appearance: none;
 }
@@ -546,20 +555,31 @@ ol li {
 
 .content-chat .content-chat-user .list-search-user-chat .user-chat {
   display: flex;
-  gap: 15px;
-  padding: 10px 15px;
-  border-radius: 25px;
+  gap: 10px;
+  padding: 1px 15px;
+  /* border-radius: 25px; */
   cursor: pointer;
 }
 
 .content-chat .content-chat-user .list-search-user-chat .user-chat:hover {
-  background-color: #c5e2e8;
+  /* background-color: #c5e2e8; */
+  box-shadow: var(--shadow) inset;
 }
 
 .content-chat .content-chat-user .list-search-user-chat .user-chat.active {
-  background-color: #c5e2e8;
+  /* background-color: #c5e2e8; */
+  padding: 2px;
+  color: var(--btn-color);
+  box-shadow: var(--shadow);
+  margin-top: 10px;
 }
-
+.content-chat .content-chat-user .list-search-user-chat .user-chat.active small{
+  display: none;
+}
+.content-chat .content-chat-user .list-search-user-chat .user-chat.active .user-chat-text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .content-chat
   .content-chat-user
   .list-search-user-chat
@@ -622,36 +642,49 @@ ol li {
 .content-chat .content-chat-message-user {
   display: none;
   background-color: #ffffff;
-  padding: 15px;
+  padding: 0px;
   border-radius: 25px;
-  max-width: 700px;
+  /* max-width: 700px; */
   width: 100%;
 }
 
 .content-chat .content-chat-message-user.active {
   display: block;
+  box-shadow: var(--shadow);
 }
 
 /* .content-chat .content-chat-message-user.d-none{
     display: none;
 } */
-
+/* 
 .content-chat .content-chat-message-user .head-chat-message-user {
   display: flex;
   gap: 15px;
   padding: 10px 15px;
   border-radius: 25px 25px 0 0;
-  background-color: #19b6d3;
+  background-color: var(--btn-color);
   margin-top: -15px;
   margin-left: -15px;
   margin-right: -15px;
+} */
+ 
+.content-chat .content-chat-message-user .head-chat-message-user {
+  /* display: flex; */
+  gap: 15px;
+  padding: 0px 15px;
+  /* border-radius: 25px 25px 0 0; */
+  background-color: var(--btn-color);
+  /* margin-top: -15px; */
+  /* margin-left: -15px; */
+  /* margin-right: -15px; */
 }
-
 .content-chat .content-chat-message-user .head-chat-message-user img {
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .content-chat
@@ -687,9 +720,9 @@ ol li {
   width: 10px;
   height: 10px;
   font-size: 20px;
-  background-color: #bb4315;
+  background-color: #15bb23;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 1px solid #ffffff;
   box-shadow: 1px 1px 15px -4px #000;
 }
 .content-chat .content-chat-message-user .body-chat-message-user {
@@ -701,7 +734,7 @@ ol li {
   height: 400px;
   margin: 15px 0;
   overflow: auto;
-  background-color: #ececec;
+  /* background-color: #ececec; */
   border-radius: 10px;
 }
 
@@ -917,7 +950,16 @@ ol li {
   button:hover {
   background-color: #daa520;
 }
-
+.right-sidebar{
+  box-shadow: var(--shadow) inset;
+  padding: 10px;
+  height: 60vh;
+}
+.right-sidebar img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
 @media (max-width: 913px) {
   .content-chat {
     padding: 0px;
