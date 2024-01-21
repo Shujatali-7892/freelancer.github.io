@@ -1534,4 +1534,231 @@ border-radius: 50px;
   color: white;
  
 }
+
+.users-div {
+}
+/* Style the tab */
+.users-div .tab {
+  background-color: #f1f1f100;
+  box-shadow: 0px 0px 15px 1px #8080801f;
+  min-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.users-div .tab:hover {
+  background-color: #f1f1f100;
+  box-shadow: 0px 0px 1px 1px #8080801f;
+}
+
+/* Style the buttons inside the tab */
+.users-div .tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 15px 16px;
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.users-div .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.users-div .tab button.active {
+  background-color: #12151b38;
+  border-left: 3px solid var(--btn-color);
+  color: var(--btn-color);
+  font-weight: 700;
+}
+/* Style the tab content */
+.users-div .tabcontent {
+  float: left;
+  padding: 12px 12px;
+  /* border: 1px solid #ccc; */
+  width: 100%;
+  box-shadow: 0px 0px 15px 1px #8080801f;
+  border-left: none;
+  min-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.users-div .tabcontent:hover {
+  background-color: #f1f1f100;
+  box-shadow: 0px 0px 1px 1px #8080801f;
+}
  
+/* profile cards */
+
+
+.users-cards .card {
+  color: #2d2d2d;
+  background-color: #ffffff;
+  /* letter-spacing: 1px; */
+  /* border: 10px solid #a0cdcf; */
+ 
+  overflow: hidden;
+  box-shadow: 0 0 20px 1px rgb(231 226 226);
+  padding: 10px;
+}
+.users-cards .card .card-description {
+  /* display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  width: auto;
+  height: 100%; */
+}
+.users-cards .card .card-description .card-description-title {
+  color: black;
+  font-size: 18px;
+}
+.users-cards .card .card-description .card-description-profession {
+  display: block;
+  font-weight: 600;
+}
+.users-cards .card .card-description .card-description-company {
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+}
+.users-cards .card .card-description .card-description-company:hover {
+  text-decoration: underline;
+}
+.users-cards .card .card-description .card-description-social {
+  /* position: absolute;
+  bottom: 40px; */
+}
+.users-cards
+  .card
+  .card-description
+  .card-description-social
+  .card-description-social-follow {
+  display: block;
+  margin-bottom: 8px;
+  color: #555572;
+  font-size: 14px;
+}
+.users-cards .card .card-description .card-description-social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.users-cards .card .card-description .card-description-social ul li {
+  list-style-type: none;
+}
+.users-cards .card .card-description .card-description-social ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #121212;
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff;
+  transition: all 0.4s;
+}
+.users-cards .card .card-description .card-description-social ul li a:hover {
+  color: white;
+  transform: translate(0, -7px);
+}
+.users-cards .card .card-description .card-description-social ul li a svg {
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+}
+.users-cards
+  .card
+  .card-description
+  .card-description-social
+  ul
+  li:nth-child(1)
+  a:hover {
+  background-color: #1da1f2;
+}
+.users-cards
+  .card
+  .card-description
+  .card-description-social
+  ul
+  li:nth-child(2)
+  a:hover {
+  background-color: #3f729b;
+}
+.users-cards
+  .card
+  .card-description
+  .card-description-social
+  ul
+  li:nth-child(3)
+  a:hover {
+  background-color: #00405d;
+}
+.users-cards
+  .card
+  .card-description
+  .card-description-social
+  ul
+  li:nth-child(4)
+  a:hover {
+  background-color: #0a66c2;
+}
+.users-cards .card .card-image {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+.inputform .form-control { 
+  background-color: var(--bs-body-bg); 
+  border: var(--bs-border-width) solid #dee2e600; 
+}
+.inputform{ 
+  border: var(--bs-border-width) solid var(--bs-border-color);
+ 
+}
+.inputform .form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
+.dillors{
+  background-color: var(--btn-color);
+  color: white; 
+}
+
+
+
+/* ------------------ search box 
+---------------------------------------*/
+
+.usersearch-div{
+
+}
+.usersearch-div .form-control{
+  height: 31px;
+}
+.usersearch-div button {
+  display: block;
+  background-color: inherit;
+  color: white !important;
+  padding: 3px 16px !important;
+  width: 100%;
+  margin: 0px 0px 0px -1px !important;
+  border: none;
+  outline: none;
+  text-align: left;
+  background-color: var(--btn-color) !important;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 14px !important;
+  height: 31px !important;
+}

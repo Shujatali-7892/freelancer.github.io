@@ -40,3 +40,10 @@
    
   });
 })();
+     // script.js
+     const showCountriesBtn = document.getElementById('showCountriesBtn');
+     const countriesList = document.getElementById('countriesList');
+     
+     showCountriesBtn.addEventListener('click', function() {
+       countriesList.classList.toggle('visible');
+     });
