@@ -1762,3 +1762,11 @@ border-radius: 50px;
   font-size: 14px !important;
   height: 31px !important;
 }
+.usersearch-div .star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.usersearch-div  i .fa-solid{
+  color: yellow !important;
+}
