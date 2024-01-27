@@ -2050,8 +2050,18 @@ details[open] .details-info {
     /* Adjust this value based on your container width and button size */
   }
 }
+ 
+.title-light{
+  color: var(--btn-color);
+  font-weight: 800;
+}
+.sproject-kills label{
+  font-weight: 800;
+}
 
-
+.sproject-kills .form-check label {
+  font-weight: 400 !important;
+}
 
    /* ....................................project-skills style  end*/
 
