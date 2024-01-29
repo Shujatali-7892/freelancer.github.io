@@ -90,21 +90,17 @@ section {
 }
 
 .light-btn {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 100%);
   border-color: #fff;
   color: #f7f8f9;
 }
 
 .light-btn:hover {
-  color: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  color: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 100%);
   border-color: #fff;
   background-color: #f7f8f9;
 }
@@ -201,8 +197,7 @@ section {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #fff;
-  border-color: var(--color-primary) transparent var(--color-primary)
-    transparent;
+  border-color: var(--color-primary) transparent var(--color-primary) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -855,8 +850,7 @@ body {
   text-shadow: 0 0 30px white;
 }
 
-.list-div {
-}
+.list-div {}
 
 /* Style the tab */
 .list-div .tab {
@@ -985,11 +979,7 @@ body {
   bottom: 40px; */
 }
 
-.profile-cards
-  .card
-  .card-description
-  .card-description-social
-  .card-description-social-follow {
+.profile-cards .card .card-description .card-description-social .card-description-social-follow {
   display: block;
   margin-bottom: 8px;
   color: #555572;
@@ -1029,43 +1019,19 @@ body {
   height: calc(100% - 15px);
 }
 
-.profile-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(1)
-  a:hover {
+.profile-cards .card .card-description .card-description-social ul li:nth-child(1) a:hover {
   background-color: #1da1f2;
 }
 
-.profile-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(2)
-  a:hover {
+.profile-cards .card .card-description .card-description-social ul li:nth-child(2) a:hover {
   background-color: #3f729b;
 }
 
-.profile-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(3)
-  a:hover {
+.profile-cards .card .card-description .card-description-social ul li:nth-child(3) a:hover {
   background-color: #00405d;
 }
 
-.profile-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(4)
-  a:hover {
+.profile-cards .card .card-description .card-description-social ul li:nth-child(4) a:hover {
   background-color: #0a66c2;
 }
 
@@ -1120,8 +1086,7 @@ body {
 /*-------------------------  tasklist----------------------------------
 ------------------------------------------ s------------------------ */
 
-.tasklist-div {
-}
+.tasklist-div {}
 
 /* Style the tab */
 .tasklist-div .tab {
@@ -1350,11 +1315,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.3) 50%,
-    rgba(0, 0, 0, 0.7) 50%
-  );
+  background-image: linear-gradient(45deg,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.7) 50%);
   background-size: 3px 3px;
   z-index: 2;
 }
@@ -1386,13 +1349,11 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: linear-gradient(
-    to top,
-    rgb(255 255 255 / 100%),
-    rgb(255 255 255 / 8%),
-    rgb(4 4 4 / 58%),
-    rgb(4 4 4 / 100%)
-  );
+  background: linear-gradient(to top,
+      rgb(255 255 255 / 100%),
+      rgb(255 255 255 / 8%),
+      rgb(4 4 4 / 58%),
+      rgb(4 4 4 / 100%));
   z-index: 2;
 }
 
@@ -1466,14 +1427,6 @@ body {
   transform: rotate(45deg);
 }
 
-/* You could try to add some css animation here, but in the end, it doesn't work that well, uncomment the following to try it out */
-/*
-details[open] .details-info {
-  animation: growAndFadeIn .24s ease-out forwards;
-}*/
-
-/* some basic styling (added to the bottom for convenience) */
-
 .collapse-div img {
   display: block;
   max-width: 100%;
@@ -1523,23 +1476,7 @@ details[open] .details-info {
   }
 }
 
-/* .right-profile .nav-item.dropdown.dropdown-mega .dropdown-menu {
-  width: auto;
-  top: auto;
-   
-} */
 
-/* .right-profile .nav-item.dropdown.dropdown-mega .dropdown-menu {
-  width: 100%;
-  top: auto; 
-  right: 0;
-} */
-
-/* .right-profile {
-  position: relative;
-  width: 100%;
-  justify-content: right;
-} */
 .membership img {
   height: 20px !important;
   width: 20px !important;
@@ -1561,35 +1498,7 @@ details[open] .details-info {
   background-color: #e9e9e9;
 }
 
-/* .country-list {
-  list-style: none;
-  padding: 0;
-  width: 200px;
-  max-height: 200px;
-  overflow-y: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-top: -5px;
-  opacity: 0;
-  pointer-events: none;
-  transition: max-height 0.5s ease, opacity 0.5s ease;  
-} */
-/* .profile-list {
-  list-style: none;
-  padding: 0; 
-  position: absolute;
-  z-index: 300;
-  right: 1%;
-  overflow-y: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-top: -5px;
-  opacity: 0;
-  pointer-events: none;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-} */
+
 .profile-list {
   list-style: none;
   padding: 0;
@@ -1605,6 +1514,7 @@ details[open] .details-info {
   pointer-events: none;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+
 .profile-list.visible {
   max-height: 80vh;
   overflow: auto;
@@ -1690,11 +1600,9 @@ details[open] .details-info {
 }
 
 .light-btn {
-  background: linear-gradient(
-    to bottom,
-    var(--main-color) 10%,
-    var(--main-color) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--main-color) 10%,
+      var(--main-color) 100%);
   color: var(--btn-color);
   box-shadow: 0px 0px 5px #80808042;
   font-weight: 800;
@@ -1713,15 +1621,6 @@ details[open] .details-info {
   overflow: hidden;
   box-shadow: 0 0 20px 1px rgb(231 226 226);
   padding: 10px;
-}
-
-.users-cards .card .card-description {
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  width: auto;
-  height: 100%; */
 }
 
 .users-cards .card .card-description .card-description-title {
@@ -1744,16 +1643,8 @@ details[open] .details-info {
   text-decoration: underline;
 }
 
-.users-cards .card .card-description .card-description-social {
-  /* position: absolute;
-  bottom: 40px; */
-}
 
-.users-cards
-  .card
-  .card-description
-  .card-description-social
-  .card-description-social-follow {
+.users-cards .card .card-description .card-description-social .card-description-social-follow {
   display: block;
   margin-bottom: 8px;
   color: #555572;
@@ -1793,43 +1684,19 @@ details[open] .details-info {
   height: calc(100% - 15px);
 }
 
-.users-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(1)
-  a:hover {
+.users-cards .card .card-description .card-description-social ul li:nth-child(1) a:hover {
   background-color: #1da1f2;
 }
 
-.users-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(2)
-  a:hover {
+.users-cards .card .card-description .card-description-social ul li:nth-child(2) a:hover {
   background-color: #3f729b;
 }
 
-.users-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(3)
-  a:hover {
+.users-cards .card .card-description .card-description-social ul li:nth-child(3) a:hover {
   background-color: #00405d;
 }
 
-.users-cards
-  .card
-  .card-description
-  .card-description-social
-  ul
-  li:nth-child(4)
-  a:hover {
+.users-cards .card .card-description .card-description-social ul li:nth-child(4) a:hover {
   background-color: #0a66c2;
 }
 
@@ -1863,9 +1730,6 @@ details[open] .details-info {
 
 /* ------------------ search box 
 ---------------------------------------*/
-
-.usersearch-div {
-}
 
 .usersearch-div .form-control {
   height: 31px;
@@ -1925,9 +1789,6 @@ details[open] .details-info {
 }
 
 /* project-div start */
-
-.project-div {
-}
 
 /* Style the tab */
 .project-div .tab {
@@ -1993,8 +1854,7 @@ details[open] .details-info {
 /* project-div ends */
 /* Contests-div start */
 
-.Contests-div {
-}
+.Contests-div {}
 
 /* Style the tab */
 .Contests-div .tab {
@@ -2056,6 +1916,7 @@ details[open] .details-info {
   background-color: #f1f1f100;
   box-shadow: 0px 0px 1px 1px #8080801f;
 }
+
 .btn-highlight {
   background-color: var(--btn-color);
   color: white;
@@ -2073,6 +1934,7 @@ details[open] .details-info {
   transform: translateY(-5px);
   box-shadow: 0px 0px 44px 1px #dbdbdb96;
 }
+
 /* .right-btn{
   height: 50px;
   width: 50px;
@@ -2084,14 +1946,18 @@ details[open] .details-info {
 } */
 
 /* ....................................project-skills style */
-.project-skills {
-}
 
 .project-skills .file-div {
   box-shadow: var(--shadow);
   padding: 10px;
   border-radius: 10px;
 }
+
+.smallclass {
+  color: var(--btn-color);
+  text-align: end;
+}
+
 .right-btn {
   height: 50px;
   width: 50px;
@@ -2104,6 +1970,15 @@ details[open] .details-info {
   position: relative;
   animation: moveLR 2s infinite alternate;
   /* alternate makes it go back and forth */
+}
+
+.dataTables_length {
+  float: left !important;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: 0 !important;
+  float: left;
 }
 
 @keyframes moveLR {
@@ -2121,6 +1996,7 @@ details[open] .details-info {
   color: var(--btn-color);
   font-weight: 800;
 }
+
 .sproject-kills label {
   font-weight: 800;
 }
@@ -2135,63 +2011,74 @@ details[open] .details-info {
   text-align: center;
   margin-bottom: 50px;
 }
-.min-max-slider > label {
+
+.min-max-slider>label {
   display: none;
 }
+
 span.value {
   height: 1.7em;
   font-weight: bold;
   display: inline-block;
 }
+
 span.value.lower::before {
   content: "$";
   display: inline-block;
 }
+
 span.value.upper::before {
   content: "- $";
   display: inline-block;
   margin-left: 0.4em;
 }
-.min-max-slider > .legend {
+
+.min-max-slider>.legend {
   display: flex;
   justify-content: space-between;
 }
-.min-max-slider > .legend > * {
+
+.min-max-slider>.legend>* {
   font-size: small;
   opacity: 0.25;
 }
-.min-max-slider > input {
+
+.min-max-slider>input {
   cursor: pointer;
   position: absolute;
 }
 
 /* webkit specific styling */
-.min-max-slider > input {
+.min-max-slider>input {
   -webkit-appearance: none;
   outline: none !important;
   background: transparent;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 30%,
-    silver 30%,
-    silver 60%,
-    transparent 60%,
-    transparent 100%
-  );
+  background-image: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 30%,
+      silver 30%,
+      silver 60%,
+      transparent 60%,
+      transparent 100%);
 }
 
-.min-max-slider > input::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+.min-max-slider>input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  width: 14px; /* Set a specific slider handle width */
-  height: 14px; /* Slider handle height */
-  background: #eee; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 14px;
+  /* Set a specific slider handle width */
+  height: 14px;
+  /* Slider handle height */
+  background: #eee;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
   border: 1px solid gray;
   border-radius: 100%;
 }
-.min-max-slider > input::-webkit-slider-runnable-track {
+
+.min-max-slider>input::-webkit-slider-runnable-track {
   cursor: pointer;
 }
 
@@ -2200,6 +2087,7 @@ span.value.upper::before {
 .mega-content a {
   color: var(--main-color) !important;
 }
+
 .mega-content a:hover {
   color: var(--btn-color) !important;
 }
@@ -2323,7 +2211,12 @@ span.value.upper::before {
   .profile-list {
     width: 30% !important;
   }
+
+  .first-div {
+    height: 100vh;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .profile-list {
     list-style: none;
@@ -2354,3 +2247,120 @@ span.value.upper::before {
     width: 100%;
   }
 }
+
+.my-btn {
+  background-color: var(--btn-color);
+  color: var(--white);
+  border: 1px solid var(--btn-color);
+}
+
+.my-btn:hover {
+  color: var(--btn-color);
+  background-color: transparent;
+  border: 1px solid var(--btn-color);
+}
+
+/* .light-btn {
+  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, .2) 100%);
+  border-color: #fff;
+  color: #f7f8f9;
+}
+
+.light-btn:hover {
+  color: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, .2) 100%);
+  border-color: #fff;
+  background-color: #f7f8f9;
+} */
+.gray-btn {
+  background: var(--main-color);
+  border-color: var(--main-color);
+  color: var(--white);
+}
+
+.gray-btn:hover {
+  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, .2) 100%);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.circle-btn {
+  background-color: var(--btn-color);
+  color: var(--white);
+  border: 1px solid var(--btn-color);
+  border-radius: 20px;
+  padding: 2px 15px;
+}
+
+.circle-btn:hover {
+  color: var(--btn-color);
+  background-color: transparent;
+  border: 1px solid var(--btn-color);
+}
+.iconside-box{
+  border: 1px solid #909080;
+  width: 30px; 
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+/* ==============================================Exams Broser project page style start here 
+===================================================*/
+
+
+.first-div section {
+  margin-top: 0px;
+}
+
+.first-div .overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .4);
+  /* background-image: linear-gradient(45deg, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .7) 50%); */
+  background-size: 3px 3px;
+  z-index: 2;
+}
+
+.first-div {
+  /* background-image: url(../img/ai-business-bg-ld.jpg); */
+  background-image: url(../img/webpahe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: waveAnimation 7s infinite linear;
+  position: relative;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: center 0;
+    /* Initial position */
+  }
+
+  50% {
+    background-position: center -10px;
+    /* Peak of the wave */
+  }
+
+  100% {
+    background-position: center 0;
+    /* Return to initial position */
+  }
+}
+
+.first-div .container,
+.first-div .container-fluid {
+  position: relative;
+  z-index: 999;
+  color: white;
+}
+
+
+
+
+
+/* ==============================================Exams Broser project page style ends here 
+===================================================*/
