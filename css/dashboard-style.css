@@ -689,6 +689,17 @@ body {
     background: #3b3e45;
     color: #fff;
   }
+  .verified-secoend-div .card {
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .verified-secoend-div .card-body .statments {
+    height: 20vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
 .socials-div ul {
@@ -2844,7 +2855,7 @@ span.value.upper::before {
   color: rgb(36, 36, 36);
 }
 
-.verified-secoend-div .card {
+/* .verified-secoend-div .card {
   height: 50vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -2854,7 +2865,7 @@ span.value.upper::before {
   height: 20vh;
   overflow-x: hidden;
   overflow-y: auto;
-}
+} */
 
 blockquote {
   font-weight: 400;
